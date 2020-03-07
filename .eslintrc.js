@@ -13,5 +13,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'no-console': process.env.NODE_ENY === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENY === 'production' ? 'error' : 'off'
   }
 }
